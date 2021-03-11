@@ -1,0 +1,38 @@
+---
+ title : "Rmarkdown Test"
+ author : JMK
+ date : "Mar 11, 2021"
+ ouput : html_document
+---
+
+### Rmarkdown Test
+  
+  *This is a test script for **rmarkdown**.*
+
+```{r}
+ data(iris)
+ library(knitr)
+ kable(iris[1:10,])
+```
+
+[구글 하이퍼링크](http://www.google.com)
+
+## R 마크다운 문법 예제
+
+~~취소선~~
+
+아래와 같이 작성하면 코드와 함께 'summary(cars)'를 실행한 결과물이 출력됩니다.
+
+```{r}
+summary(cars)
+```
+
+## Latex math equations
+
+Here is math equation
+
+$$
+\sum_{i=1}^n \frac{1}{x_i}
+$$
+
+
