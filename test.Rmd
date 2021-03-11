@@ -1,0 +1,29 @@
+---
+ title : "Rmarkdown Test"
+ author : JMK
+ date : "Mar 11, 2021"
+ ouput : html_document
+---
+
+## Rmarkdown Test
+  
+  This is a test script for rmarkdown.
+
+'''{r}
+ data(iris)
+ library(knitr)
+ kable(iris[1:10,])
+'''
+
+## Latex math equations
+
+Here is math equation
+
+$$
+\sum_{i=1}^n \frac{1}{x_i}
+$$
+
+## Include graph
+
+'''{r fig_ex1, out.width = "350px", fig.align="center", echo=False}
+knitr::include.graphics("Figs/blue.png")
